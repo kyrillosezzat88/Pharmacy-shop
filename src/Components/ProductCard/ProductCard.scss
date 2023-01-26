@@ -1,0 +1,31 @@
+.Product-Card {
+  @apply relative transition-all;
+  img {
+    @apply rounded-2xl mb-2;
+  }
+  &_category {
+    @apply text-sm text-primary;
+  }
+  &_name {
+    @apply font-PtsBold text-primary_dark md:text-lg h-[50px];
+  }
+  &_price {
+    @apply font-PtsBold text-primary_dark block text-base;
+  }
+  button {
+    @apply mt-3;
+  }
+  &_actions {
+    @apply absolute right-[20px] top-[20px] opacity-0;
+    transition: all 0.3s ease-in-out;
+    svg {
+      @apply mb-3  bg-white p-[5px] rounded-full text-primary cursor-pointer shadow-md;
+    }
+  }
+  &:hover {
+    .Product-Card_actions {
+      @apply opacity-100;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

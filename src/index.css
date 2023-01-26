@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('./Assets/Fonts/PTSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('./Assets/Fonts/PTSans-Bold.ttf');
+}
+body {
+  margin: 0;
+  font-family: 'PTSans-Regular' , "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

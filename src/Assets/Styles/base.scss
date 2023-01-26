@@ -1,0 +1,7 @@
+@import "./input.scss";
+@import "./select.scss";
+@import "./button.scss";
+
+.title {
+  @apply text-[24px] text-primary_dark font-PtsBold leading-[32px] my-8;
+}

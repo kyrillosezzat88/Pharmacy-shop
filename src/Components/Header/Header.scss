@@ -1,0 +1,21 @@
+header {
+  @apply flex my-6;
+  .logo {
+    @apply w-1/2 md:w-1/6;
+  }
+  form {
+    @apply w-5/6 mx-8 bg-primary_light rounded-full overflow-hidden hidden md:flex;
+    button {
+      border-radius: 0 !important;
+    }
+  }
+  .support {
+    @apply w-1/6 items-center hidden md:flex;
+    &_text {
+      @apply text-xs text-primary_dark;
+    }
+    &_phone {
+      @apply font-bold font-PtsBold mt-1 text-primary_dark text-sm;
+    }
+  }
+}

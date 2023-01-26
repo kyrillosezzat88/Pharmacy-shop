@@ -1,0 +1,9 @@
+.Breadcrumb {
+  @apply my-4;
+  li {
+    @apply flex items-center;
+    svg {
+      @apply mx-2;
+    }
+  }
+}

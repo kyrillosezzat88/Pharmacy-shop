@@ -1,0 +1,7 @@
+.inpt{
+    @apply outline-none px-4 text-sm;
+}
+.inpt_primary{
+    @extend .inpt;
+    @apply bg-primary_light text-primary_dark;
+}

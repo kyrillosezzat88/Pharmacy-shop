@@ -1,0 +1,6 @@
+.search{
+    @apply flex items-center justify-center container;
+    &_content{
+        @apply  w-full grid grid-cols-1 md:grid-cols-5 gap-3 items-center bg-white shadow-md py-6 md:-mt-10 z-10 rounded-xl px-4 md:px-12;
+    }
+}

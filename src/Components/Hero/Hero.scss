@@ -1,0 +1,54 @@
+.Hero {
+  .carousel {
+    @apply relative;
+    .control-arrow {
+      @apply rounded-full w-[48px] h-[48px] flex items-center justify-center;
+      background-color: #fff !important;
+      position: absolute !important;
+      top: 50% !important;
+      opacity: 1 !important;
+      box-shadow: 0 0 18px 0px #ddd;
+      &::before {
+        border-left-color: #184363 !important;
+        border-right-color: #184363 !important;
+      }
+      &:hover {
+        @apply bg-primary_dark;
+      }
+    }
+    .control-next {
+      margin-right: 30px;
+    }
+    .control-prev {
+      margin-left: 30px;
+    }
+    .slide {
+      @apply relative h-[180px] md:h-auto rounded-md;
+      z-index: 0 !important;
+      &_background{
+        @apply h-full object-cover;
+      }
+      &_content {
+        @apply flex justify-between items-center w-full absolute top-[50%] -translate-y-[50%] px-[20px] md:px-[160px] text-left h-full;
+        &_title {
+          @apply font-PtsBold text-sm md:text-5xl mt-2;
+        }
+        &_subtitle{
+            @apply text-xs md:text-sm;
+        }
+        &_Products_img {
+          @apply flex items-end w-1/2 relative ;
+          img {
+            @apply w-[100px] md:w-full object-contain ;
+            &:nth-of-type(2) {
+              @apply -ml-[30px] md:-ml-[100px] w-[80px] md:w-[80%];
+            }
+            &:nth-of-type(3) {
+              @apply absolute top-0 md:top-[40px] right-[20px] w-[40px] md:w-[87px];
+            }
+          }
+        }
+      }
+    }
+  }
+}

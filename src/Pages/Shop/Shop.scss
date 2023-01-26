@@ -1,0 +1,26 @@
+.Shop {
+  &_content_filter {
+    .title {
+      @apply text-lg mb-4 #{!important};
+    }
+    &_category,
+    &_brand {
+      ul {
+        li {
+          @apply text-primary_dark font-PtsBold my-3 hover:text-primary hover:transition-all cursor-pointer transition-all;
+        }
+      }
+    }
+    &_price {
+      // input[type="range"] {
+      //   overflow: hidden;
+      //   -webkit-appearance: none;
+      //   background-color: #9a905d;
+      // }
+      // input[type="range"]::-webkit-slider-thumb {
+      //   background: #434343;
+      //   box-shadow: -80px 0 0 80px #43e5f7;
+      // }
+    }
+  }
+}

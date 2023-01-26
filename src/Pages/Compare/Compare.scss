@@ -1,0 +1,21 @@
+.Compare {
+  @apply my-[30px];
+  &_content {
+    @apply flex gap-6;
+    &_titles,
+    &_info {
+      @apply relative;
+      li {
+        @apply my-2 pb-2 border-b font-PtsBold;
+      }
+    }
+    &_info {
+      li {
+        @apply my-2 pb-2 border-b font-PtsReg;
+      }
+      &_title {
+        @apply text-base md:text-lg font-PtsBold my-4 h-[55px];
+      }
+    }
+  }
+}

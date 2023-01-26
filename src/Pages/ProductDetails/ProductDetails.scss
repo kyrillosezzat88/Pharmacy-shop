@@ -1,0 +1,37 @@
+.ProductDetails {
+  &_description {
+    ul {
+      li {
+        @apply text-base mb-2 text-primary_dark flex items-center;
+        svg {
+          @apply text-green-500;
+        }
+      }
+    }
+  }
+  &_actions {
+    @apply gap-5 flex items-center flex-wrap md:flex-nowrap  justify-center md:justify-between bg-gray-100 rounded-xl p-6;
+    &_qty {
+      @apply flex items-center;
+      span {
+        @apply bg-primary_dark text-white text-xl flex justify-center items-start cursor-pointer w-[24px] h-[24px] rounded-full;
+      }
+      input {
+        @apply text-center mx-2 py-2 w-[150px] rounded-full outline-none shadow-sm;
+      }
+    }
+  }
+  .control-dots {
+    @apply relative mt-0;
+    li {
+      background: gray !important;
+      box-shadow: none !important;
+    }
+    .selected {
+      background-color: #184363 !important;
+    }
+  }
+  .Product-Card {
+    @apply text-left;
+  }
+}

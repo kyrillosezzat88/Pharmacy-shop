@@ -1,0 +1,22 @@
+.footer {
+  &_title {
+    @apply text-primary font-PtsBold text-lg mb-6;
+  }
+  &_phone {
+    @apply font-PtsBold text-2xl text-primary mb-3;
+  }
+  &_email {
+    @apply flex items-center mt-4;
+  }
+  ul {
+    li {
+      @apply text-primary_dark text-sm my-2;
+    }
+  }
+  &_social_links {
+    @apply flex gap-3 mt-6 items-center text-primary;
+    a {
+      @apply hover:text-primary_dark transition-all;
+    }
+  }
+}

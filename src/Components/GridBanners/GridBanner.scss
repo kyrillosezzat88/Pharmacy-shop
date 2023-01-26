@@ -1,0 +1,12 @@
+.GridBanners{
+    &_content{
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        grid-template-columns: 45% repeat(auto-fit, minmax(300px, 1fr));
+        // grid-template-columns: 2fr 1fr 1fr ;
+        @media screen {
+            
+        }
+    }
+}

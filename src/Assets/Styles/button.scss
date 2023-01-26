@@ -1,0 +1,39 @@
+.btn {
+  @apply py-2 px-4 rounded-full text-center font-PtsBold transition-all text-sm cursor-pointer;
+}
+
+.btn-primary {
+  @extend .btn;
+  @apply bg-primary text-primary_light;
+}
+
+.btn-primary-light {
+  @extend .btn;
+  @apply bg-primary_light text-primary_dark;
+  &:hover {
+    @apply bg-primary_dark text-white transition-all;
+  }
+}
+.btn-primary-dark {
+  @extend .btn;
+  @apply bg-primary_dark text-primary_light;
+  &:hover {
+    @apply bg-primary_light text-primary_dark transition-all;
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  @apply bg-secondary text-white;
+  &:hover {
+    @apply bg-primary_dark transition-all;
+  }
+}
+
+.btn-tertiary {
+  @extend .btn;
+  @apply bg-tertiary text-white;
+  &:hover {
+    @apply bg-primary_dark transition-all;
+  }
+}

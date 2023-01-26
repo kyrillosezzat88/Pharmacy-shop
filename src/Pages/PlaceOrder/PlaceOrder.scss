@@ -1,0 +1,40 @@
+.PlaceOrder {
+  @apply my-[30px];
+  &_message {
+    @apply text-xl text-center bg-green-200 rounded-md p-3;
+  }
+  &_header {
+    @apply flex my-4 shadow p-4 rounded-md border;
+    li {
+      @apply border-r px-4 mx-2;
+      &:last-of-type {
+        border-right: none;
+      }
+      h5 {
+        @apply text-sm font-PtsBold text-primary_dark;
+      }
+    }
+  }
+  &_details {
+    table {
+      @apply w-full text-left shadow border p-3 rounded-md mb-[30px];
+      padding: 20px !important;
+      thead {
+        @apply border-b;
+        th {
+          @apply p-4 px-6;
+        }
+      }
+      tbody {
+        tr {
+          td {
+            @apply p-3 px-6;
+          }
+          .tdCustome {
+            @apply text-primary_dark font-PtsBold;
+          }
+        }
+      }
+    }
+  }
+}

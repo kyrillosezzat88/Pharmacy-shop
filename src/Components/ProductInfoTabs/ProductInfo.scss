@@ -1,0 +1,11 @@
+.ProductInfoTabs {
+  ul {
+    @apply flex mb-6;
+    li {
+      @apply mr-2 p-2 px-4 cursor-pointer rounded-md text-primary_dark font-PtsBold;
+    }
+    .active {
+      @apply text-primary_dark font-PtsBold bg-primary_light text-primary;
+    }
+  }
+}
