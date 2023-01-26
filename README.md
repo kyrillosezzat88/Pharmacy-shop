@@ -1,46 +1,108 @@
-# Getting Started with Create React App
+# Pharmacy Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Pharmacy Shop is a E-commerce app to buy medicines it`s built in React,Redux Toolkit and Typescript
 
-## Available Scripts
+[![React](https://cdn.iconscout.com/icon/free/png-256/react-2752089-2284906.png)](https://ibb.co/3fW2RyQ)
 
-In the project directory, you can run:
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Alt text](https://i.ibb.co/vhpsVbV/pharmacy-1.png "Home Page (Hero-section)")
+![Alt text](https://i.ibb.co/rGyXBCM/pharmacy-2.png "Home Page (products-section)")
+![Alt text](https://i.ibb.co/3yZVGwM/pharmacy-3.png "Product Details")
+![Alt text](https://i.ibb.co/9v9mN76/pharmacy-4.png "Cart Page")
+![Alt text](https://i.ibb.co/j4wkYpd/pharmacy-5.png "Place Order")
+![Alt text](https://i.ibb.co/cyM6nLq/pharmacy-6.png "Thanks For order")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Add and Remove Products to or from cart
+- Add and Remove Products to or from Wishlist
+- Add and Remove Products to or from Comapres
+- Place new Order
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech
 
-### `npm run build`
+- [ReactJS](https://reactjs.org/)
+- [React-Router](https://reactrouter.com/en/main)
+- [Redux-Toolkit](https://redux-toolkit.js.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+- [Tailwind](https://tailwindcss.com/)
+- [React-toastify](https://www.npmjs.com/package/react-toastify)
+- [React-Feather](https://www.npmjs.com/package/react-feather)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+└── Pharmacy/
+    ├── build
+    ├── public
+    └── src/
+        ├── Assets/
+        │   ├── Fonts/
+        │   ├── images/
+        │   └── styles/
+        ├── components/
+        │   ├── Banner
+        │   ├── Benefits
+        │   ├── Breadcrumb
+        │   ├── Cart
+        │   ├── CategorieslLinks
+        │   ├── Footer
+        │   ├── Form
+        │   ├── GridBanners
+        │   ├── Header
+        │   ├── Hero
+        │   ├── MobileMenu
+        │   ├── Navbar
+        │   ├── NewsLetter
+        │   ├── PopularCategories
+        │   ├── ProductCard
+        │   ├── ProductInfoTabs
+        │   ├── ProductThumbnail
+        │   ├── Reviews
+        │   ├── Search
+        │   ├── Tabs
+        │   └── TopNav
+        ├── CustomHooks/
+        │   └── ViewPort
+        ├── pages/
+        │   ├── Cart
+        │   ├── Checkout
+        │   ├── Compare
+        │   ├── Home
+        │   ├── PlaceOrder
+        │   ├── ProductDetails
+        │   ├── Shop
+        │   └── Wishlist
+        └── Store/
+            ├── Slices/
+            │    ├── CartSlice
+            │    ├── OrderSlice
+            │    └── ProductsSlice
+            └── Store.js
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Pharmacy Shop requires [Node.js](https://nodejs.org/) to run.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install the dependencies and devDependencies and start the server.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+cd app-folder
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For Generate Build folder:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+npm run build
+```
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT

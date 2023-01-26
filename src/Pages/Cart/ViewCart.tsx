@@ -50,7 +50,7 @@ const ViewCart = () => {
                         </div>
                         <div className="w-full md:w-1/4 py-4">
                             <h2 className="text-primary_dark font-PtsBold text-lg mb-4">Cart Totals</h2>
-                            <div className="shadow-md p-2 rounded-md border">
+                            <div className="shadow-md p-2 rounded-md border mb-6">
                                 <div className="flex justify-between items-center border-b p-3">
                                     <span>Subtotal</span>
                                     <span>{Total}$</span>
@@ -63,8 +63,8 @@ const ViewCart = () => {
                                     <span>Total</span>
                                     <span>{Total}$</span>
                                 </div>
-                                <Link to='/checkout' className="btn-tertiary mt-2">Proceed to checkout</Link>
                             </div>
+                            <Link to='/checkout' className="btn-tertiary mt-2">Proceed to checkout</Link>
                         </div>
                     </div>
                     :
